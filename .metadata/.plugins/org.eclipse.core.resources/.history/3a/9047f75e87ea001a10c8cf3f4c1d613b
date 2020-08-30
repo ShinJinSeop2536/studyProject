@@ -1,0 +1,12 @@
+
+public class Pair<K,V> {
+	private K key;
+	private V Value;
+	
+	public Pair(K key, V value) {
+		this.key = key;
+		this.Value = value;
+	}
+	public void setKey(K key) {this.key = key;}
+
+}

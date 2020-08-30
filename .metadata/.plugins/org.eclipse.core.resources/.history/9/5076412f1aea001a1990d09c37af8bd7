@@ -1,0 +1,12 @@
+
+public class Product<T, M> {
+	private T kind;
+	private M model;
+	
+	public T getKind() {return this.Kind;}
+	public M getModel() {return this.Model;}
+	
+	public void setKind(T Kind) {this.Kind = Kind;}
+	public void setModel(M model) {this.model = model;}
+
+}

@@ -1,0 +1,20 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Product<TV, String> p1 = new Product<TV, String>();
+		p1.setKind(new TV());
+		p1.setModel("스마트TV");
+		TV t1 = p1.getKind();
+		String  name =  p1.getModel();
+		
+		Product<Car, Integer> p2 = new Product<Car, Integer>();
+		p1.setKind(new Car());
+		p1.setModel("스마트TV");
+		TV t1 = p1.getKind();
+		String  name =  p1.getModel();
+		
+	}
+
+}

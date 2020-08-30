@@ -1,0 +1,8 @@
+
+public class Box<T> {
+	private T name;
+	public void set(T name) {
+		
+	}
+
+}

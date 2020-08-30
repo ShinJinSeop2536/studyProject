@@ -1,0 +1,10 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Product<TV, String> p1 = new Product<TV, String>();
+		p1.setKind(new TV());
+	}
+
+}

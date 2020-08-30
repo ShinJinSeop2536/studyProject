@@ -1,0 +1,9 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Pair<Integer, String> p1 = new Pair<>(100, "ȫ�浿"); 
+	}
+
+}
