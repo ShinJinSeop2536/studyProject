@@ -26,4 +26,4 @@ public class Comparer {
     }
 }
 ```
-  - https://docs.oracle.com/javase/tutorial/java/generics/genTypeInference.html 읽고 요약
+  - https://docs.oracle.com/javase/tutorial/java/generics/genTypeInference.html 타입 추론 공부
