@@ -27,3 +27,5 @@ public class Comparer {
 }
 ```
   - https://docs.oracle.com/javase/tutorial/java/generics/genTypeInference.html 타입 추론 공부
+  
+  - 토비 commit history 만들기
