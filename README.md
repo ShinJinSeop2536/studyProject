@@ -1,8 +1,10 @@
 ### 자바
-[제네릭](./generic.md)
-[예외](./exception.md)
-### 토비의 스프링
-[오브젝트와 의존관계](./object and dependency.md)
+[제네릭](./generic.md)  
+[예외](./exception.md)  
+### 토비의 스프링  
+[오브젝트와 의존관계](./dependency.md)  
+
+
 # studyProject
 왜 제네릭을 사용해야 하는가 
 -제네릭을 타입을 이용함으로써 잘못된 타입이 사용될 수 있는 문제를 컴파일 과정에서 제거할 수 있게 된다. 제네릭은 클래스와 인터페이스 그리고 메소드를 정의할 떄 type을 parameter로 사용할 수 있도록 한다. 
