@@ -35,3 +35,24 @@ this = 내부적으로 생성되는 익명 객체의 참조
 람다식은 메소드 내부에서 주로 작성되기 때문에 로컬  익명 구현 객체를 생성시킨다고 봐야 한다.  
 메소드의 매게 변수 또는 로컬 변수를 사용하면 이 두 변수를 사용하면 final 특성을 가진다.  
 컴파일 시 final 키워드가 있다면 메소드 내부에 지역 변수로 복사되지만, final 키워드가 없다면 익명 클래스의 필드로 복사된다.  
+5. 표준 API 함수적 인터페이스  
+자바에서 제공되는 표준 API를 람다식으로 표현 가능하다.  
+함수적 인터페이스 표준 API 제공된다.  
+패키지의 함수적 인터 페이스는 크게 Consumer, Sapplier, Function, Operator, Predicate로 구분된다.  
+Consumer:	-매개값이 있고, 리턴값이 없음  
+Sapplier:    	-매개값이 없고, 리턴값은 있음  
+Function:   	-매개값이 있고, 리턴값도 있음   
+-주고 매게값을 리턴값으로  
+Operator, 	-매개값이 있고, 리턴값도 있음  
+		-주로 매개값을 연산하고 결과를 리턴  
+Predicate:	-매개값이 있고, 리턴 타입은 Boolean  
+		-매개값을 조사해서 true/false를 리턴  
+1. Consumer 함수적 인터페이스   
+Consumer 함수적 인터페이스의 특징은 린턴값이 없는 accept 매소드르 가지고 있다 사용만 할 뿐 리턴값이 없다.  
+2. Supplier   
+Supplier는 매개변수가 없고 리턴값이 있는 getXXX() 메소드를 갖는다.  
+3 Function  
+Function 함수는 매개값을 가지고 리턴값이 있는 applyXXX() 메소드를 가진다. 이 매소드들은 매매값을 리턴 값으로 매핑해준다.  
+Function<Student, String> function = t->{return t.getName();}  
+Function<Student, String> function = t-> t.getName();  
+
