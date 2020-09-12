@@ -55,4 +55,20 @@ Supplier는 매개변수가 없고 리턴값이 있는 getXXX() 메소드를 갖
 Function 함수는 매개값을 가지고 리턴값이 있는 applyXXX() 메소드를 가진다. 이 매소드들은 매매값을 리턴 값으로 매핑해준다.  
 Function<Student, String> function = t->{return t.getName();}  
 Function<Student, String> function = t-> t.getName();  
+4 Operator   
+Function 동일하다.  단지 연산을 수행한 후 동일한 타입으로 리턴값을 제공한다.  
+IntBinaryOperator opterator = (a, b) -> {….; return int값;}  
+5 Predicate  
+Predicate함수적 인터페이스는 매개 변수와 Boolean 리턴값이 있는 testXXX() 메소드를 가지고 있다.   
+매개랎을  true, false 리턴하다.  
+Predicate<Strudent> predicate = t->{return t.getSex().equals(“남자”);}  
+Predicate<Strudent> predicate = t-> t.getSex().equals(“남자”);  
+7. andThen() 과 compase() 디폴트 메소드  
+andThen과 compase 디폴트 메소드는 두 개의 함수적 인터페이스를 순차적을 연결, 다른점은 먼저 처리하느냐이다.  
+8. and(), or, negate  
+And==&&  
+Or==||  
+Engetate == !  
+8.minBy, maxBy  
+Comparator를 이용해서 최대 T와 최소 T를 얻는 BinaryOperator<T>를 리턴한다.  
 
